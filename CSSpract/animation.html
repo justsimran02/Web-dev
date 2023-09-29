@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+
+            }
+            .box{
+                width: 350px;
+                height: 80px;
+                background-color: aquamarine;
+                border: 3px solid rgb(182, 222, 21);
+                border-radius: 20px;
+                margin: 10px;
+                position: relative;
+                animation-name: rightmovement;
+                animation-duration: 5s;
+                animation-iteration-count:2 ;
+                animation-delay: 2s;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+                animation-fill-mode: backwards;
+
+            }
+            @keyframes rightmovement {
+                 from{
+                    top: 0;
+                    left: 0;
+                }
+                 to{
+                    top: 0;
+                    left: 1300px;
+
+                 }
+                
+            }
+            #Box2{
+                width: 350px;
+                height: 80px;
+                background-color: aquamarine;
+                border: 3px solid rgb(182, 222, 21);
+                border-radius: 20px;
+                margin: 10px;
+                position: relative;
+                animation-name: leftmovement;
+                animation-duration: 5s;
+                animation-iteration-count:2 ;
+                animation-delay: 2s;
+                animation-timing-function: ease-in;
+                animation-direction: alternate;
+                animation-fill-mode: backwards;
+            }
+            @keyframes leftmovement {
+                 from{
+                    top: 700px;
+                    left: 1300px;
+                }
+                 to{
+                    top: 700px;
+                    left: 0;
+
+                 }
+                
+            }
+            #circle{
+                width: 100px;
+                height: 100px;
+                background-color: rgb(255, 136, 127);
+                border: 3px solid rgb(182, 222, 21);
+                border-radius: 50px;
+                margin: 10px;
+                position: relative;
+                top: 30%;
+                left: 40% ;
+
+            }
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div id="circle">
+
+        </div>
+        <div id="Box2">
+
+        </div>
+        
+
+    </div>
+</body>
+</html>

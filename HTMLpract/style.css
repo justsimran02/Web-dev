@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    /* border: 2px solid black; */
+    margin: 10px;
+    background-color:transparent;
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 100 px;
+    z-index: 1;
+}
+h2{
+    color: rgb(252, 252, 252);
+    background-color: rgba(215, 76, 143, 0.599);
+    padding: 4px;
+}
+.box{
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgb(113, 217, 229);
+    float: left;
+}
+.image{
+    margin: 20px;
+    position: relative;
+    top: 10px;
+    float: left;
+}
+body{
+    /* background-color:beige; */
+    background: linear-gradient(to top, rgb(14, 231, 213),rgb(1, 1, 31));
+    padding: 30px;
+}
+body::before{
+    background-color: white;
+    width: 90vh;
+    height: 90vw;
+}
+h3{
+    font-size: 25px;
+    background-color: rgba(226, 128, 43, 0.425);
+    display: inline;
+}
+.new{
+    font-size: 20px;
+    display: contents;
+}
+#sample{
+    height: 50px;
+    width: 90vw;
+    position: absolute;
+    background-color: rgb(250, 241, 241);
+    top: 0%;
+    z-index: 0;
+}
